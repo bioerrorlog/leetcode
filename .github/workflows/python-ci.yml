@@ -36,10 +36,10 @@ jobs:
         run: |
           poetry install --no-interaction
 
-      - name: Run tests
-        run: |
-          poetry run pytest
-
       - name: Linting
         run: |
           poetry run flake8
+
+      - name: Run tests
+        run: |
+          poetry run pytest
