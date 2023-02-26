@@ -8,5 +8,4 @@ from leetcode_py.two_sum import Solution
     ]
 )
 def test_two_sum(nums, target, expected):
-    sol = Solution()
-    assert sol.two_sum(nums, target) == expected
+    assert Solution().two_sum(nums, target) == expected
