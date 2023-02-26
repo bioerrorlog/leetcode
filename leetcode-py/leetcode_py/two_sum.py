@@ -8,9 +8,9 @@ class Solution:
         control = [target - i for i in nums]
 
         result = []
-        for i, val in enumerate(control):
-            for j in nums:
-                if val == j:
+        for i, ctrl_val in enumerate(control):
+            for j, val in enumerate(nums):
+                if i != j and ctrl_val == val:
                     result.append(i)
 
         return result
