@@ -5,7 +5,7 @@ from typing import List
 
 class Solution:
     def two_sum(self, nums: List[int], target: int) -> List[int]:
-        prev_vals = {} # val: index
+        prev_vals = {}  # val: index
 
         for i, val in enumerate(nums):
             diff = target - val
