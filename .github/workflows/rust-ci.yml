@@ -33,14 +33,16 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: check
-          working-directory: ${{ env.WORKING_DIR }}
+          args: --manifest-path ${{ env.WORKING_DIR }}/Cargo.toml
 
       - name: Run cargo test
         uses: actions-rs/cargo@v1
         with:
           command: test
+          args: --manifest-path ${{ env.WORKING_DIR }}/Cargo.toml
 
       - name: Run clippy
         uses: actions-rs/cargo@v1
         with:
           command: clippy
+          args: --manifest-path ${{ env.WORKING_DIR }}/Cargo.toml
