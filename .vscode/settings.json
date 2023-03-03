@@ -4,5 +4,9 @@
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.lintOnSave": true,
-    "python.linting.pylintEnabled": false
+    "python.linting.pylintEnabled": false,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+    }
 }
