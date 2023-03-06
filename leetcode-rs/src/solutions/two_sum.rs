@@ -2,6 +2,7 @@ use std::collections::HashMap;
 
 // Problem 1.
 // https://leetcode.com/problems/two-sum/
+#[allow(dead_code)]
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     // val: index
     let mut prev_vals: HashMap<i32, usize> = HashMap::with_capacity(nums.len());
