@@ -1,3 +1,4 @@
+from typing import List
 import pytest
 from leetcode_py.two_sum import Solution
 
@@ -9,5 +10,5 @@ from leetcode_py.two_sum import Solution
                              ([3, 3], 6, [0, 1]),
                          ]
                          )
-def test_two_sum(nums, target, expected):
+def test_two_sum(nums: List[int], target: int, expected: List[int]):
     assert Solution().two_sum(nums, target) == expected
