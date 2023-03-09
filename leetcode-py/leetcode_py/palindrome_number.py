@@ -4,13 +4,7 @@
 # https://leetcode.com/problems/palindrome-number/
 class Solution:
     def is_palindrome(self, x: int) -> bool:
-        x = str(x)
+        if x < 0 or (x > 0 and x % 10 == 0):
+            return False
 
-        while len(x) >= 2:
-            x, first = x[1:], x[0]
-            x, last = x[:-1], x[-1]
-
-            if first != last:
-                return False
-
-        return True
+        return str(x) == str(x)[::-1]
