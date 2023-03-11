@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 // Problem 9.
 // https://leetcode.com/problems/palindrome-number/
 #[allow(dead_code)]
